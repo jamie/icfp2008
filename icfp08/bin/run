@@ -1,2 +1,7 @@
 #!/usr/bin/env ruby
 
+$: << File.join(File.dirname(__FILE__), '..', 'src')
+
+require 'controller'
+
+Controller.new(ARGV[0], ARGV[1]).run
